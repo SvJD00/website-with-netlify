@@ -1,0 +1,87 @@
+body {
+    background-color: #252525;
+}
+
+.subback {
+    background-color: rgb(22, 22, 22);
+    margin: 0px 100px 0px 100px;
+}
+
+h1 {
+    margin-left: 70px;
+    font-size: 50px;
+}
+
+.enlist-top {
+    height: 80px;
+    width: 240px;
+    margin-right: 70px;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.top-of-page {
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    background-image: url(https://img2.reactor.cc/pics/post/full/Stephen-Cornu-Cadian-Astra-Militarum-Imperium-6153408.jpeg);
+}
+
+.top-line {
+    position: absolute;
+    opacity: 30%;
+    margin-top: 0px;
+    z-index: -1;
+}
+
+nav {
+    background-color: rgb(20, 32, 15);
+    font-size: large;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-style: solid;
+    border-right: none;
+    border-left: none;
+    border-width: 1px;
+    border-color: aliceblue;
+}
+
+a {
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid;
+    border-top: thin;
+    border-bottom: thin;
+    border-color: aliceblue;
+    background-color: #1b1f19;
+}
+
+.slideshow {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: content-box;
+    margin: 30px 300px 5px 300px;
+    border-style: solid;
+    border-radius: 40px;
+}
+
+.slideshowimg {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    color: aliceblue;
+}
