@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    var i = 0; 			// Start Point
+    var images = [];	// Images Array
+    var time = 3000;	// Time Between Switch
+
+// Image List
+    images[0] = "https://spikeybits.com/wp-content/uploads/2017/05/Astra-Militarum.jpg";
+    images[1] = "https://rare-gallery.com/uploads/posts/4581059-warhammer-40000-imperial-guard.jpg";
+    images[2] = "https://funvizeo.com/media/thumbs/20220407/e8858c35db7f3e3e/imperial-guard-warhammer-40k-mechina-the-embly-of-tyrants-ae2d47d79b7aaf0c-67f56087a4a42e38.jpg";
+
+// Change Image
+    function changeImg(){
+	    document.slide.src = images[i];
+
+	    if(i < images.length - 1){
+	    // Add 1 to Index
+	    i++;
+	    } else {
+		// Reset Back To O
+		i = 0;
+	    }
+
+	// Run function every x seconds
+	    setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+
+</script>
+<link rel="stylesheet" href="main.ss">
+<head>
+    <title>EMPEROR APPRICIATION</title>
+</head>
+
+<body>
+
+<div class="top-of-page">
+    <h1>IMPERIAL GUARD</h1>
+    <button class="enlist-top">ENLIST</button>
+    <img src="https://img2.reactor.cc/pics/post/full/Stephen-Cornu-Cadian-Astra-Militarum-Imperium-6153408.jpeg" width="1920" height="400">
+</div>
+
+<nav>
+    <a>HOME</a>
+    <a>KNOW YOUR ENEMY</a>
+    <a>EMPEROR APPRICIATION</a>
+    <a>OATH OF THE EMPIRE</a>
+</nav>
+
+<div>
+    <h2>HERE IS THE OATH WE SWEAR EVERYDAY</h2>
+    <h3>MIND IT AND KEEP IN IT IN YOUR HEART</h3>
+    <p>'Do you, Soldier, accept your role in this? Do you promise to lead your men into the zone of war, and conduct them to glory, no matter the ferocity or ingenuity of the foe? Do you swear to crush the insurgency of the Dark Forces, despite all they might throw at you? Do you pledge to do honour to the Astra Astra-Militarum and the Emperor?"</p>
+</div>
+
+
+<footer>
+    <p>Made by Astra-Militarum, all rights reserved</p>
+    <img src="https://rare-gallery.com/uploads/posts/4538538-warhammer-40000-imperial-aquila-artwork-text-black-background-simple-background.jpg" width="1000" height="300">
+</footer>
+
+</body>
