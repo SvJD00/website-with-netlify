@@ -1,10 +1,13 @@
 body {
-    background-color: #252525;
+    background-color: #03160a;
 }
 
 .subback {
     background-color: rgb(22, 22, 22);
     margin: 0px 100px 0px 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 
 h1 {
@@ -13,12 +16,21 @@ h1 {
 }
 
 .enlist-top {
-    height: 80px;
-    width: 240px;
+    height: 90px;
+    width: 260px;
     margin-right: 70px;
     font-size: 50px;
     font-style: italic;
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(245, 12, 12);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition-property: font-size;
+    transition-duration: 0.1s;
+}
+
+.enlist-top:hover {
+    font-size: 55px;
 }
 
 .top-of-page {
@@ -65,23 +77,114 @@ a {
     background-color: #1b1f19;
 }
 
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
 .slideshow {
     background-color: rgb(26, 26, 26);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     box-sizing: content-box;
-    margin: 30px 300px 5px 300px;
     border-style: solid;
     border-radius: 40px;
+    width: fit-content;
+    padding: 40px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
 }
 
 .slideshowimg {
     margin-bottom: 30px;
+    border-radius: 20px;
 }
 
 h2 {
     font-size: 40px;
     color: aliceblue;
+}
+
+h3 {
+    font-size: 28px;
+    color: aliceblue;
+}
+
+.post {
+    border-style: solid;
+    border-color: black;
+    background-color:rgb(26, 26, 26) ;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 15px;
+    width: fit-content;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.post-right {
+    border-style: solid;
+    border-color: black;
+    background-color:rgb(26, 26, 26) ;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 15px;
+    width: fit-content;
+    margin-left: 740px;
+    margin-right: 100px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.enlist-now-button {
+    height: fit-content;
+    width: fit-content;
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(245, 12, 12);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+    transition-property: font-size;
+    transition-duration: 0.1s;
+}
+
+.enlist-now-button:hover {
+    font-size: 85px;
+}
+
+.enlist-now-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 100px;
+    
+}
+
+footer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: black;
+}
+
+#footer-text {
+    margin-left: 40px;
 }
