@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+    var i = 0; 			// Start Point
+    var images = [];	// Images Array
+    var time = 3000;	// Time Between Switch
+
+// Image List
+    images[0] = "https://spikeybits.com/wp-content/uploads/2017/05/Astra-Militarum.jpg";
+    images[1] = "https://rare-gallery.com/uploads/posts/4581059-warhammer-40000-imperial-guard.jpg";
+    images[2] = "https://funvizeo.com/media/thumbs/20220407/e8858c35db7f3e3e/imperial-guard-warhammer-40k-mechina-the-embly-of-tyrants-ae2d47d79b7aaf0c-67f56087a4a42e38.jpg";
+
+// Change Image
+    function changeImg(){
+	    document.slide.src = images[i];
+
+	    if(i < images.length - 1){
+	    // Add 1 to Index
+	    i++;
+	    } else {
+		// Reset Back To O
+		i = 0;
+	    }
+
+	// Run function every x seconds
+	    setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+
+</script>
+<link rel="stylesheet" href="main.css">
+<head>
+    <title>IMPERIAL GUARD</title>
+</head>
+
+<body>
+<div class="subback">
+<div class="top-of-page">
+    <h1>IMPERIAL GUARD</h1>
+    <img class="img-background" src="../website/toppage.jpeg" style="width: 1200;">
+    <div class="enlist-top-button-container">
+        <button class="enlist-top" onclick="location.href='../website/enlist.html'" type="button">ENLIST!</button>
+    </div>
+</div>
+
+<nav>
+    <a href="../website/index.html">HOME</a>
+    <a href="../website/know-your-enemy.html">KNOW YOUR ENEMY</a>
+    <a href="../website/emperor-appriciation.html">EMPEROR APPRICIATION</a>
+    <a href="../website/oath-of-the-empire.html">OATH OF THE EMPIRE</a>
+</nav>
+
+
+<form>
+
+    <div class="input-container">
+        <label name="name" class="label-text">YOUR NAME</label>
+        <input type="text" name="name" class="form-text">
+
+        <label name="surname" class="label-text">YOUR SURNAME</label>
+        <input type="text" name="name" class="form-text">
+
+        <label name="email" class="label-text">YOUR INTERSYSTEM MAIL</label>
+        <input type="email" name="email" class="form-email">
+
+        <label name="date" class="label-text">YOUR DATE OF BIRTH</label>
+        <input type="date" name="date" class="form-date" min="39000-01-01" max="40000-01-01">
+
+        <label for="belief" class="label-text">WHAT DO YOU BELIEVE IN</label>
+        <select id="belief" class="belief">SELECT YOUR BELIEF
+            <option value="">-- SELECT YOUR BELIEF --
+             </option>
+             <option value="EMPEROR OF MANKIND">EMPEROR OF MANKIND</option>
+             <option value="GOD-EMPEROR">GOD-EMPEROR</option>
+             <option value="MASTER OF MANKIND">MASTER OF MANKIND</option>
+             <option value="REVELATION">REVELATION</option>
+             <option value="Something else">Something else</option>
+        </select>
+
+        <label name="textfield" class="label-text">ANY COMMENTS?</label>
+        <textarea id="textarea" class="textarea">Your praise of the emperor here...</textarea>
+        <span class="warning">WARNING! HERETICAL ANSWERS WILL BE PROSECUTED!</span>
+
+        <div class="checkbox-container">
+            <label name="checkbox" class="label-text-checkbox">AGREE TO THE FOLLOWING:</label>
+            <input type="checkbox" name="checkbox" class="checkbox" id="prosecution">
+                <label for="prosecution">I therefore agree to be persecuted by Inquisition or any other suitable authority</label>
+            <input type="checkbox" name="checkbox" class="checkbox" id="alignment">
+                <label for="prosecution">I agree to be assigned at any front my commander find suitable and declare total obediency to my officers</label>
+        </div>
+    </div>
+
+</form>
+
+
+<footer>
+    <p id="footer-text">Made by Astra-Militarum, all rights reserved</p>
+    <img src="https://rare-gallery.com/uploads/posts/4538538-warhammer-40000-imperial-aquila-artwork-text-black-background-simple-background.jpg" width="600" height="200">
+</footer>
+</div>
+</body>

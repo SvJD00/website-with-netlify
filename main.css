@@ -13,8 +13,16 @@ body {
 h1 {
     margin-left: 70px;
     font-size: 50px;
+    z-index: 2;
 }
 
+.enlist-top-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
 .enlist-top {
     height: 90px;
     width: 260px;
@@ -27,28 +35,28 @@ h1 {
     border-radius: 10px;
     transition-property: font-size;
     transition-duration: 0.1s;
+    z-index: 2;
 }
 
 .enlist-top:hover {
     font-size: 55px;
 }
 
+.img-background {
+    z-index: 1;
+    position: absolute;
+}
+
 .top-of-page {
     height: 200px;
-    background-color: rgb(0, 0, 0);
+    background-color: #292929;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: aliceblue;
-    background-image: url(https://img2.reactor.cc/pics/post/full/Stephen-Cornu-Cadian-Astra-Militarum-Imperium-6153408.jpeg);
+    background-image: url("../website/toppage.jpeg") no-repeat;
 }
 
-.top-line {
-    position: absolute;
-    opacity: 30%;
-    margin-top: 0px;
-    z-index: -1;
-}
 
 nav {
     background-color: rgb(20, 32, 15);
@@ -68,6 +76,8 @@ nav {
 }
 
 a {
+    text-decoration: none !important;
+    color: aliceblue;
     box-sizing: border-box;
     padding: 10px;
     border: solid;
@@ -75,6 +85,13 @@ a {
     border-bottom: thin;
     border-color: aliceblue;
     background-color: #1b1f19;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+a:hover {
+    -webkit-transform: scale(1.1) rotate(0.01deg);
+        transform: scale(1.1) rotate(0.01deg);
 }
 
 .slideshow-container {
@@ -125,7 +142,7 @@ h3 {
     margin-top: 50px;
     margin-bottom: 50px;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
 }
 
@@ -137,12 +154,20 @@ h3 {
     color: aliceblue;
     font-size: 15px;
     width: fit-content;
-    margin-left: 740px;
+    margin-left: 580px;
     margin-right: 100px;
     margin-top: 50px;
     box-sizing: border-box;
     padding: 30px;
     box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.p-post {
+    background-color: rgb(46, 46, 46);
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 18px;
 }
 
 .enlist-now-button {
@@ -156,7 +181,7 @@ h3 {
     border-radius: 10px;
     border-style: solid;
     border-color: black;
-    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+    box-shadow: 2px 1px hsla(0, 0%, 0%, 0.2);
     transition-property: font-size;
     transition-duration: 0.1s;
 }
@@ -171,7 +196,7 @@ h3 {
     align-items: center;
     margin-top: 100px;
     height: 100px;
-    
+
 }
 
 footer {
@@ -183,8 +208,240 @@ footer {
     font-size: 30px;
     color: aliceblue;
     background-color: black;
+    height: 200px;
 }
 
 #footer-text {
     margin-left: 40px;
+}
+
+/* KNOW YOUR ENEMY CLASSES */
+
+.many-enemies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.many-enemies {
+    border-style: solid;
+    border-color: black;
+    background-color:rgb(26, 26, 26) ;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 24px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enemy-showcase {
+    border-style: solid;
+    border-color: black;
+    background-color:rgb(26, 26, 26) ;
+    border-radius: 20px;
+    color: aliceblue;
+    width: fit-content;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.enemy-showcase-right {
+    border-style: solid;
+    border-color: black;
+    background-color:rgb(26, 26, 26) ;
+    border-radius: 20px;
+    color: aliceblue;
+    width: fit-content;
+    margin-left: 480px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.enemy-showcase-text-container {
+    font-size: 15px;
+}
+
+.enemy-img {
+    box-sizing: border-box;
+    padding: 0px 30px 0px 30px;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.enemy-img:hover {
+    -webkit-transform: scale(1.1) rotate(0.01deg);
+        transform: scale(1.1) rotate(0.01deg);
+}
+
+/* EMPEROR APPRICIATION CLASSES */
+
+.emperor-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#emperor-face-text {
+    width: 620px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#emperor-face-img {
+    width: 520;
+}
+
+/* OATH OF THE EMPIRE CLASSES */
+
+.oath-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 30px 0px 30px;
+    margin-bottom: 0px;
+}
+
+#oath {
+    text-align: center;
+    width: 520px;
+    font-size: 40px;
+    font-style: italic;
+    color: aliceblue;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #03160a;
+    background-color: rgb(46, 46, 46);
+    box-sizing: border-box;
+    padding: 20px 30px 20px 30px;
+    margin-bottom: 0px;
+}
+
+#imperium-sign {
+    border-radius: 20px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+#astra-sign {
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+/* ENLIST CLASSES */
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-text {
+    color: aliceblue;
+    font-size: 50px;
+}
+.form-text {
+    color: aliceblue;
+    background-color: #292929;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 5px 20px 5px 20px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.form-email {
+    color: aliceblue;
+    background-color: #292929;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 5px 20px 5px 20px;
+}
+
+
+.form-email:-webkit-autofill,
+.form-email:-webkit-autofill:hover,
+.form-email:-webkit-autofill:focus,
+.form-email:-webkit-autofill:active {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: aliceblue;
+        transition: background-color 5000s ease-in-out 0s;
+        box-shadow: inset 0 0 20px 20px #292929;
+}
+
+.belief {
+    background-color: #292929;
+    color: aliceblue;
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    box-sizing: border-box;
+    padding: 5px 0px 5px 90px;
+    font-size: 25px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.form-date {
+    width: 400px;
+    height: 50px;
+    color: aliceblue;
+    background-color: #292929;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px 0px 5px 150px;
+    border-radius: 10px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+#textarea {
+    width: 600px;
+    height: 200px;
+    background-color: #292929;
+    color: aliceblue;
+    font-size: 20px;
+    box-shadow: 6px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.warning {
+    font-size: 20px;
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.label-text-checkbox {
+    font-size: 16px;
+    color: aliceblue;
 }

@@ -8,8 +8,6 @@
 // Image List
     images[0] = "https://spikeybits.com/wp-content/uploads/2017/05/Astra-Militarum.jpg";
     images[1] = "https://rare-gallery.com/uploads/posts/4581059-warhammer-40000-imperial-guard.jpg";
-    images[2] = "https://funvizeo.com/media/thumbs/20220407/e8858c35db7f3e3e/imperial-guard-warhammer-40k-mechina-the-embly-of-tyrants-ae2d47d79b7aaf0c-67f56087a4a42e38.jpg";
-
 // Change Image
     function changeImg(){
 	    document.slide.src = images[i];
@@ -37,25 +35,31 @@ window.onload=changeImg;
 
 <body>
 
-<div class="top-of-page">
-    <h1>IMPERIAL GUARD</h1>
-    <button class="enlist-top">ENLIST!</button>
-    <img src="https://img2.reactor.cc/pics/post/full/Stephen-Cornu-Cadian-Astra-Militarum-Imperium-6153408.jpeg" width="1920" height="400">
+    <div class="subback">
+        <div class="top-of-page">
+            <h1>IMPERIAL GUARD</h1>
+            <img class="img-background" src="../website/toppage.jpeg" style="width: 1200;">
+            <div class="enlist-top-button-container">
+                <button class="enlist-top" onclick="location.href='../website/enlist.html'" type="button">ENLIST!</button>
+            </div>
+        </div>
+
+        <nav>
+            <a href="../website/index.html">HOME</a>
+            <a href="../website/know-your-enemy.html">KNOW YOUR ENEMY</a>
+            <a href="../website/emperor-appriciation.html">EMPEROR APPRICIATION</a>
+            <a href="../website/oath-of-the-empire.html">OATH OF THE EMPIRE</a>
+        </nav>
+
+<div class="emperor-face">
+    <h2 id="emperor-face-text">HERE IS THE IMAGE OF OUR GREAT GOD-EMPEROR OF MANKIND. <br>
+    <h2 id="emperor-face-text"> STARE AND CONTEMPLATE</h2>
+    <img id="emperor-face-img" src="https://i.pinimg.com/736x/2a/56/ca/2a56ca185ccfe949bb84b0fd4501e324.jpg" height="1000" width="1200">
 </div>
 
-<nav>
-    <a>HOME</a>
-    <a>KNOW YOUR ENEMY</a>
-    <a>EMPEROR APPRICIATION</a>
-    <a>OATH OF THE EMPIRE</a>
-</nav>
-
-<h2>HERE IS THE IMAGE OF OUR GREAT GOD-EMPEROR OF MANKIND. STARE AND CONTEMPLATE</h2>
-<img src="https://i.pinimg.com/736x/2a/56/ca/2a56ca185ccfe949bb84b0fd4501e324.jpg" height="1000" width="1200">
-
 <footer>
-    <p>Made by Astra-Militarum, all rights reserved</p>
-    <img src="https://rare-gallery.com/uploads/posts/4538538-warhammer-40000-imperial-aquila-artwork-text-black-background-simple-background.jpg" width="1000" height="300">
+    <p id="footer-text">Made by Astra-Militarum, all rights reserved</p>
+    <img src="https://rare-gallery.com/uploads/posts/4538538-warhammer-40000-imperial-aquila-artwork-text-black-background-simple-background.jpg" width="600" height="200">
 </footer>
-
+</div>
 </body>
