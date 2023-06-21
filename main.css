@@ -561,7 +561,11 @@ form {
 }
 
 .submit-button-container {
-    margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        margin-top: 50px;
 }
 
 .submit-button {
