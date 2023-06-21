@@ -1,35 +1,5 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
-<script>
-    var i = 0; 			// Start Point
-    var images = [];	// Images Array
-    var time = 3000;	// Time Between Switch
-
-// Image List
-    images[0] = "https://spikeybits.com/wp-content/uploads/2017/05/Astra-Militarum.jpg";
-    images[1] = "https://rare-gallery.com/uploads/posts/4581059-warhammer-40000-imperial-guard.jpg";
-    images[2] = "https://funvizeo.com/media/thumbs/20220407/e8858c35db7f3e3e/imperial-guard-warhammer-40k-mechina-the-embly-of-tyrants-ae2d47d79b7aaf0c-67f56087a4a42e38.jpg";
-
-// Change Image
-    function changeImg(){
-	    document.slide.src = images[i];
-
-	    if(i < images.length - 1){
-	    // Add 1 to Index
-	    i++;
-	    } else {
-		// Reset Back To O
-		i = 0;
-	    }
-
-	// Run function every x seconds
-	    setTimeout("changeImg()", time);
-}
-
-// Run function when page loads
-window.onload=changeImg;
-
-</script>
 <link rel="stylesheet" href="main.css">
 <head>
     <title>IMPERIAL GUARD</title>
@@ -85,11 +55,21 @@ window.onload=changeImg;
 
         <div class="checkbox-container">
             <label name="checkbox" class="label-text-checkbox">AGREE TO THE FOLLOWING:</label>
-            <input type="checkbox" name="checkbox" class="checkbox" id="prosecution">
-                <label for="prosecution">I therefore agree to be persecuted by Inquisition or any other suitable authority</label>
-            <input type="checkbox" name="checkbox" class="checkbox" id="alignment">
-                <label for="prosecution">I agree to be assigned at any front my commander find suitable and declare total obediency to my officers</label>
+            <div class="checkbox-container-statemants">
+                <div class="checkbox-check-container">
+                    <input type="checkbox" name="checkbox" class="checkbox" id="prosecution">
+                        <label for="prosecution">I therefore agree to be persecuted by Inquisition or any other suitable authority</label>
+                </div>
+                <div class="checkbox-check-container">
+                    <input type="checkbox" name="checkbox" class="checkbox" id="alignment">
+                        <label for="prosecution">I agree to be assigned at any front my commander find suitable and declare total obediency to my officers</label>
+                </div>
+            </div>
         </div>
+
+        <div class="submit-button-container">
+            <button class="submit-button">SUBMIT!</button>
+            </div>
     </div>
 
 </form>
